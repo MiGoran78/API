@@ -6,31 +6,30 @@ use Illuminate\Support\Facades\Schema;
 
 class MakersTable extends Migration {
 
-	/**
-	 * Run the migrations.
-	 *
-	 * @return void
-	 */
-	public function up()
-	{
-		Schema::create('makers', function(Blueprint $table)
-		{
-			$table->increments('id');
-			$table->string('name');
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('makers', function(Blueprint $table)
+        {
+            $table->increments('id');
+            $table->string('name');
             $table->integer('phone');
-			$table->timestamps();
-		});
-	}
+            $table->nullableTimestamps();
+        });
+    }
 
-
-	/**
-	 * Reverse the migrations.
-	 *
-	 * @return void
-	 */
-	public function down()
-	{
-		Schema::drop('makers');
-	}
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::drop('makers');
+    }
 
 }
