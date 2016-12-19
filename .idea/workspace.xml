@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="49666715-fddd-4370-a68e-89dab9daedb6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/MakerController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/MakerController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/VehicleController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/VehicleController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Maker.php" afterPath="$PROJECT_DIR$/app/Maker.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/MakerVehiclesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/MakerVehiclesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Vehicle.php" afterPath="$PROJECT_DIR$/app/Vehicle.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VehicleController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VehicleController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VehicleController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -50,8 +49,8 @@
       <file leaf-file-name="MakerController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MakerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="18" column="58" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="18" selection-end-column="58" />
+            <state relative-caret-position="561">
+              <caret line="46" column="57" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="46" selection-end-column="57" />
               <folding>
                 <element signature="e#39#61#0#PHP" expanded="true" />
                 <element signature="e#190#262#0#PHP" expanded="false" />
@@ -67,26 +66,36 @@
       <file leaf-file-name="Maker.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Maker.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MakerVehiclesController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MakerVehiclesController.php">
+      <file leaf-file-name="Vehicle.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Vehicle.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MakerVehiclesController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MakerVehiclesController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="58" column="21" lean-forward="true" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
               <folding>
                 <element signature="e#39#61#0#PHP" expanded="true" />
-                <element signature="e#183#255#0#PHP" expanded="false" />
-                <element signature="e#329#409#0#PHP" expanded="false" />
-                <element signature="e#450#530#0#PHP" expanded="false" />
-                <element signature="e#570#660#0#PHP" expanded="false" />
-                <element signature="e#702#802#0#PHP" expanded="false" />
-                <element signature="e#846#948#0#PHP" expanded="false" />
+                <element signature="e#215#287#0#PHP" expanded="false" />
+                <element signature="e#560#640#0#PHP" expanded="false" />
+                <element signature="e#681#761#0#PHP" expanded="false" />
+                <element signature="e#801#891#0#PHP" expanded="false" />
+                <element signature="e#1400#1500#0#PHP" expanded="false" />
+                <element signature="e#1544#1646#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -119,15 +128,15 @@
         <option value="$PROJECT_DIR$/database/seeds/VehiclesSeed.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_12_13_080936_makers_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_12_13_084554_vehicles_table.php" />
-        <option value="$PROJECT_DIR$/app/Vehicle.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/MakerSeed.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Route.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/MakerVehiclesController.php" />
-        <option value="$PROJECT_DIR$/app/Maker.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/MakerController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/VehicleController.php" />
+        <option value="$PROJECT_DIR$/app/Maker.php" />
+        <option value="$PROJECT_DIR$/app/Vehicle.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/MakerVehiclesController.php" />
       </list>
     </option>
   </component>
@@ -405,12 +414,12 @@
       <workItem from="1481531859817" duration="1067000" />
       <workItem from="1481533053887" duration="14030000" />
       <workItem from="1482071388160" duration="3593000" />
-      <workItem from="1482083251053" duration="6288000" />
+      <workItem from="1482083251053" duration="7919000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25775000" />
+    <option name="totallyTimeSpent" value="27406000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -422,7 +431,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="221" y="4" width="1454" height="997" extended-state="1" />
+    <frame x="221" y="4" width="1454" height="997" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -659,14 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Vehicle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/MakerSeed.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -715,34 +716,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MakerVehiclesController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VehicleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="306">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="e#39#61#0#PHP" expanded="true" />
-            <element signature="e#183#255#0#PHP" expanded="false" />
-            <element signature="e#329#409#0#PHP" expanded="false" />
-            <element signature="e#450#530#0#PHP" expanded="false" />
-            <element signature="e#570#660#0#PHP" expanded="false" />
-            <element signature="e#702#802#0#PHP" expanded="false" />
-            <element signature="e#846#948#0#PHP" expanded="false" />
+            <element signature="e#194#266#0#PHP" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Maker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MakerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="58" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="18" selection-end-column="58" />
+        <state relative-caret-position="561">
+          <caret line="46" column="57" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="46" selection-end-column="57" />
           <folding>
             <element signature="e#39#61#0#PHP" expanded="true" />
             <element signature="e#190#262#0#PHP" expanded="false" />
@@ -754,13 +742,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VehicleController.php">
+    <entry file="file://$PROJECT_DIR$/app/Maker.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Vehicle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MakerVehiclesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="58" column="21" lean-forward="true" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
           <folding>
             <element signature="e#39#61#0#PHP" expanded="true" />
-            <element signature="e#194#266#0#PHP" expanded="false" />
+            <element signature="e#215#287#0#PHP" expanded="false" />
+            <element signature="e#560#640#0#PHP" expanded="false" />
+            <element signature="e#681#761#0#PHP" expanded="false" />
+            <element signature="e#801#891#0#PHP" expanded="false" />
+            <element signature="e#1400#1500#0#PHP" expanded="false" />
+            <element signature="e#1544#1646#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
