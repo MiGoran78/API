@@ -3,16 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="49666715-fddd-4370-a68e-89dab9daedb6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/MakerController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/MakerController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/VehicleController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/VehicleController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Maker.php" afterPath="$PROJECT_DIR$/app/Maker.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyModel.php" afterPath="$PROJECT_DIR$/app/MyModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Vehicle.php" afterPath="$PROJECT_DIR$/app/Vehicle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_12_13_080936_makers_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_12_13_080936_makers_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_12_13_084554_vehicles_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_12_13_084554_vehicles_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/MakerSeed.php" afterPath="$PROJECT_DIR$/database/seeds/MakerSeed.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/VehiclesSeed.php" afterPath="$PROJECT_DIR$/database/seeds/VehiclesSeed.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,14 +34,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VehicleController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VehicleController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VehicleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="e#39#61#0#PHP" expanded="true" />
-                <element signature="e#177#249#0#PHP" expanded="false" />
+                <element signature="e#194#266#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -57,21 +50,31 @@
       <file leaf-file-name="MakerController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MakerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="23" />
+            <state relative-caret-position="238">
+              <caret line="18" column="58" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="18" selection-end-column="58" />
               <folding>
                 <element signature="e#39#61#0#PHP" expanded="true" />
-                <element signature="e#175#247#0#PHP" expanded="false" />
-                <element signature="e#306#386#0#PHP" expanded="false" />
-                <element signature="e#426#516#0#PHP" expanded="false" />
-                <element signature="e#558#658#0#PHP" expanded="false" />
-                <element signature="e#702#804#0#PHP" expanded="false" />
+                <element signature="e#190#262#0#PHP" expanded="false" />
+                <element signature="e#385#465#0#PHP" expanded="false" />
+                <element signature="e#505#595#0#PHP" expanded="false" />
+                <element signature="e#839#939#0#PHP" expanded="false" />
+                <element signature="e#989#1091#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MakerVehiclesController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Maker.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Maker.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MakerVehiclesController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MakerVehiclesController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -116,15 +119,15 @@
         <option value="$PROJECT_DIR$/database/seeds/VehiclesSeed.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_12_13_080936_makers_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_12_13_084554_vehicles_table.php" />
-        <option value="$PROJECT_DIR$/app/Maker.php" />
         <option value="$PROJECT_DIR$/app/Vehicle.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/MakerSeed.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Route.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/MakerVehiclesController.php" />
+        <option value="$PROJECT_DIR$/app/Maker.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/MakerController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/VehicleController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/MakerVehiclesController.php" />
       </list>
     </option>
   </component>
@@ -402,12 +405,12 @@
       <workItem from="1481531859817" duration="1067000" />
       <workItem from="1481533053887" duration="14030000" />
       <workItem from="1482071388160" duration="3593000" />
-      <workItem from="1482083251053" duration="3989000" />
+      <workItem from="1482083251053" duration="6288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23476000" />
+    <option name="totallyTimeSpent" value="25775000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -419,7 +422,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="221" y="4" width="1454" height="997" extended-state="0" />
+    <frame x="221" y="4" width="1454" height="997" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -476,7 +479,7 @@
         <state relative-caret-position="357">
           <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
           <folding>
-            <element signature="e#7#38#0#PHP" expanded="true" />
+            <element signature="e#7#38#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -497,7 +500,7 @@
         <state relative-caret-position="102">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="e#7#23#0#PHP" expanded="true" />
+            <element signature="e#7#23#0#PHP" expanded="false" />
             <element signature="e#201#270#0#PHP" expanded="false" />
           </folding>
         </state>
@@ -516,7 +519,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#7#38#0#PHP" expanded="true" />
+            <element signature="e#7#38#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -639,7 +642,7 @@
         <state relative-caret-position="391">
           <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
           <folding>
-            <element signature="e#7#48#0#PHP" expanded="true" />
+            <element signature="e#7#48#0#PHP" expanded="false" />
             <element signature="e#178#243#0#PHP" expanded="false" />
             <element signature="e#522#591#0#PHP" expanded="false" />
           </folding>
@@ -651,16 +654,8 @@
         <state relative-caret-position="629">
           <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
-            <element signature="e#7#48#0#PHP" expanded="true" />
+            <element signature="e#7#48#0#PHP" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Maker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -688,7 +683,7 @@
         <state relative-caret-position="357">
           <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
           <folding>
-            <element signature="e#7#38#0#PHP" expanded="true" />
+            <element signature="e#7#38#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -698,7 +693,7 @@
         <state relative-caret-position="102">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="e#7#23#0#PHP" expanded="true" />
+            <element signature="e#7#23#0#PHP" expanded="false" />
             <element signature="e#201#270#0#PHP" expanded="false" />
           </folding>
         </state>
@@ -720,32 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MakerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="23" />
-          <folding>
-            <element signature="e#39#61#0#PHP" expanded="true" />
-            <element signature="e#175#247#0#PHP" expanded="false" />
-            <element signature="e#306#386#0#PHP" expanded="false" />
-            <element signature="e#426#516#0#PHP" expanded="false" />
-            <element signature="e#558#658#0#PHP" expanded="false" />
-            <element signature="e#702#804#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VehicleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#39#61#0#PHP" expanded="true" />
-            <element signature="e#177#249#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MakerVehiclesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -758,6 +727,40 @@
             <element signature="e#570#660#0#PHP" expanded="false" />
             <element signature="e#702#802#0#PHP" expanded="false" />
             <element signature="e#846#948#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Maker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MakerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="58" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="18" selection-end-column="58" />
+          <folding>
+            <element signature="e#39#61#0#PHP" expanded="true" />
+            <element signature="e#190#262#0#PHP" expanded="false" />
+            <element signature="e#385#465#0#PHP" expanded="false" />
+            <element signature="e#505#595#0#PHP" expanded="false" />
+            <element signature="e#839#939#0#PHP" expanded="false" />
+            <element signature="e#989#1091#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VehicleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#39#61#0#PHP" expanded="true" />
+            <element signature="e#194#266#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>

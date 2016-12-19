@@ -2,13 +2,12 @@
 
 use Illuminate\Database\Eloquent\Model;
 
+
 class Maker extends Model
 {
     protected $table = 'makers';
-
     protected $fillable = ['name', 'phone'];
-
-    protected $hidden = ['updated_at', 'created_at'];
+    protected $hidden = ['id', 'updated_at', 'created_at'];
 
     public function vehicles()
     {
