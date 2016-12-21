@@ -25,9 +25,11 @@ class MakerController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Request $request)
 	{
-		//
+		$values = $request->only(['name', 'phone']);
+        Maker::create($values);
+        return response()->json(['message' => 'Maker correctly added'], 201);
 	}
 
 
