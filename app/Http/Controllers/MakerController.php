@@ -2,6 +2,7 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CreateMakerRequest;
 use App\Maker;
 use Illuminate\Http\Request;
 
@@ -25,7 +26,7 @@ class MakerController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store(Request $request)
+	public function store(CreateMakerRequest $request)
 	{
 		$values = $request->only(['name', 'phone']);
         Maker::create($values);
@@ -56,10 +57,22 @@ class MakerController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update(CreateMakerRequest $request, $id)
 	{
-        //
-	}
+        $maker = Maker::find($id);
+        if(!$maker) {
+            return response()->json(['message' => 'This maker does not exist', 'code'=>404], 404);
+        }
+
+        $name = $request->get('name');
+        $phone = $request->get('phone');
+
+        $maker->name = $name;
+        $maker->phone = $phone;
+        $maker->save();
+
+        return response()->json(['message' => 'This maker has been updated'], 200);
+    }
 
 
 	/**
