@@ -2,6 +2,8 @@
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+
 
 class Handler extends ExceptionHandler {
 
@@ -13,6 +15,7 @@ class Handler extends ExceptionHandler {
 	protected $dontReport = [
 		'Symfony\Component\HttpKernel\Exception\HttpException'
 	];
+
 
 	/**
 	 * Report or log an exception.
@@ -27,6 +30,7 @@ class Handler extends ExceptionHandler {
 		return parent::report($e);
 	}
 
+
 	/**
 	 * Render an exception into an HTTP response.
 	 *
@@ -36,14 +40,20 @@ class Handler extends ExceptionHandler {
 	 */
 	public function render($request, Exception $e)
 	{
-		if ($this->isHttpException($e))
-		{
-			return $this->renderHttpException($e);
-		}
-		else
-		{
-			return parent::render($request, $e);
-		}
+	    if($e instanceof NotFoundHttpException) {
+	        return response()->json(['message' => 'Bad request. please verify your request route', 'code' => 400], 400);
+        } else {
+            return response()->json(['message' => 'Unexpected error, try again later', 'code' => 500], 500);
+        }
+
+//		if ($this->isHttpException($e))
+//		{
+//			return $this->renderHttpException($e);
+//		}
+//		else
+//		{
+//			return parent::render($request, $e);
+//		}
 	}
 
 }
