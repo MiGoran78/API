@@ -45,15 +45,6 @@ class Handler extends ExceptionHandler {
         } else {
             return response()->json(['message' => 'Unexpected error, try again later', 'code' => 500], 500);
         }
-
-//		if ($this->isHttpException($e))
-//		{
-//			return $this->renderHttpException($e);
-//		}
-//		else
-//		{
-//			return parent::render($request, $e);
-//		}
 	}
 
 }
