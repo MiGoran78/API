@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\CreateMakerRequest;
 use App\Maker;
 use App\Vehicle;
+use Composer\Cache;
 use Illuminate\Http\Request;
 
 
@@ -12,7 +13,7 @@ class MakerController extends Controller {
 
     public function __construct()
     {
-        $this->middleware('auth.basic.once', ['except' => ['index', 'show']]);
+        $this->middleware('oauth', ['except' => ['index', 'show']]);
     }
 
 
@@ -23,7 +24,14 @@ class MakerController extends Controller {
 	 */
 	public function index()
 	{
-	    $makers = Maker::all();
+        $makers = Maker::simplePaginate(15);
+//        $makers = Maker::all();
+
+//        $makers = Cache::remember('makers', 15/60, function (){
+//            return Maker::all();
+//        });
+
+//        return response()->json(['next' => $makers->nextPageUrl, 'previous' => $makers->previousPageUrl, 'data' => $makers->items()], 200);
         return response()->json(['data' => $makers], 200);
 	}
 
@@ -36,8 +44,8 @@ class MakerController extends Controller {
 	public function store(CreateMakerRequest $request)
 	{
 		$values = $request->only(['name', 'phone']);
-        Maker::create($values);
-        return response()->json(['message' => 'Maker correctly added'], 201);
+        $maker = Maker::create($values);
+        return response()->json(['message' => "Maker correctly added with id: {$maker->id}"], 201);
 	}
 
 
