@@ -3,17 +3,14 @@
 use Illuminate\Database\Eloquent\Model;
 
 
-class Maker extends Model {
-
+class Maker extends Model
+{
     protected $table = 'makers';
-
     protected $fillable = ['name', 'phone'];
+    protected $hidden = ['updated_at', 'created_at'];
 
-    protected $hidden = ['id', 'created_at', 'updated_at'];
-
-
-    public function vehicles() {
+    public function vehicles()
+    {
         return $this->hasMany('App\Vehicle');
     }
-
 }

@@ -12,6 +12,19 @@
 */
 
 use Illuminate\Support\Facades\Route;
+use LucaDegasperi\OAuth2Server\Facades\Authorizer;
 
 
-Route::get('/{name?}', 'MyController@index');
+//Route::get('/{name?}', 'MyController@index');
+
+Route::group(array('prefix' => '/api/v1.1'), function() {
+
+    Route::resource('makers', 'MakerController', ['except' => ['create', 'edit']]);
+    Route::resource('vehicles', 'VehicleController', ['only' => ['index', 'show']]);
+    Route::resource('makers.vehicles', 'MakerVehiclesController', ['except' => ['edit', 'create']]);
+
+    Route::post('/oauth/access_token', function(){
+        return response()->json(Authorizer::issueAccessToken());
+    });
+
+});
