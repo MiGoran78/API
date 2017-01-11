@@ -2,13 +2,26 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CreateFileRequest;
+use App\Http\Requests\UpdateFileRequest;
+use App\File;
+use App\File as FileManager;
 
 
 class FileController extends Controller
 {
+
+//    public function __construct()
+//    {
+//        $this->middleware('oauth', ['except' => ['index', 'show']]);
+//    }
+
+
+
     /**
      * Display a listing of the resource.
      *
@@ -20,16 +33,29 @@ class FileController extends Controller
     }
 
 
+
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateFileRequest $request)
     {
-        //
+        $title = $request->get('title');
+        $description = $request->get('description');
+
+        $path = $this->storeFile($request);
+
+        $instance = File::create([
+            'title'       => $title,
+            'description' => $description,
+            'path'        => $path
+        ]);
+
+        return response()->json(['data' => "The file {$instance->name} was created with id {$instance->id}"], 200);
     }
+
 
 
     /**
@@ -44,6 +70,7 @@ class FileController extends Controller
     }
 
 
+
     /**
      * Update the specified resource in storage.
      *
@@ -51,10 +78,28 @@ class FileController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateFileRequest $request, $id)
     {
-        //
+        $file = File::find($id);
+
+        if($file) {
+            $file->title = $request->get('title');
+            $file->description = $request->get('description');
+
+            if ($request->hasFile('file')) {
+                FileManager::delete(public_path().$file->path);
+
+                $path = $this->storeFile($request);
+                $file->path = $path;
+            }
+
+            $file->save();
+            return response()->json(['data' => "The file {$file->id} was updated"], 200);
+        }
+
+        return response()->json(['message' => "Does not exists file with that id"], 404);
     }
+
 
 
     /**
@@ -67,4 +112,18 @@ class FileController extends Controller
     {
         //
     }
+
+
+
+    function storeFile($request) {
+        $file = $request->file('file');
+
+        $path = '/files/';
+        $name = sha1(Carbon::now()) . '.' . $file->guessExtension();
+
+        $file->move(public_path().$path, $name);
+
+        return $path.$name;
+    }
+
 }
