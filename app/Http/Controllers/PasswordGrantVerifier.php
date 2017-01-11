@@ -12,8 +12,7 @@ class PasswordGrantVerifier extends Controller
 {
     public function verify($username, $password)
     {
-        $credentials =
-            [
+        $credentials = [
                 'email'    => $username,
                 'password' => $password,
             ];
