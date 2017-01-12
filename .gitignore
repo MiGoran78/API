@@ -16,3 +16,5 @@ bootstrap/cache/
 
 /_windows
 *.xml
+.idea/workspace.xml
+.idea/MyOwnAPI.iml
