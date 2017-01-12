@@ -3,6 +3,10 @@
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Illuminate\Validation\ValidationException;
+use Illuminate\Auth\Access\AuthorizationException;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Symfony\Component\HttpKernel\Exception\HttpException;
 
 
 class Handler extends ExceptionHandler {
@@ -12,10 +16,12 @@ class Handler extends ExceptionHandler {
 	 *
 	 * @var array
 	 */
-	protected $dontReport = [
-		'Symfony\Component\HttpKernel\Exception\HttpException'
-	];
-
+    protected $dontReport = [
+        AuthorizationException::class,
+        HttpException::class,
+        ModelNotFoundException::class,
+        ValidationException::class,
+    ];
 
 	/**
 	 * Report or log an exception.
@@ -42,9 +48,9 @@ class Handler extends ExceptionHandler {
 	{
 	    if($e instanceof NotFoundHttpException) {
 	        return response()->json(['message' => 'Bad request. please verify your request route', 'code' => 400], 400);
-        } else {
-            return response()->json(['message' => 'Unexpected error, try again later', 'code' => 500], 500);
         }
+
+        return parent::render($request, $e);
 	}
 
 }
