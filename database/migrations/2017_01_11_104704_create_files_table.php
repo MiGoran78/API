@@ -18,7 +18,7 @@ class CreateFilesTable extends Migration
             $table->string('title');
             $table->string('description');
             $table->string('path');
-            $table->timestamps();
+            $table->nullableTimestamps();
         });
     }
 

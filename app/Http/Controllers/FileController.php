@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use Carbon\Carbon;
-use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CreateFileRequest;
 use App\Http\Requests\UpdateFileRequest;
+use Carbon\Carbon;
+
 use App\File;
-use App\File as FileManager;
+use Illuminate\Support\Facades\File as FileManager;
 
 
 class FileController extends Controller
@@ -29,7 +29,9 @@ class FileController extends Controller
      */
     public function index()
     {
-        //
+        $files = File::all();
+
+        return response()->json(['data' => $files], 200);
     }
 
 
@@ -66,7 +68,13 @@ class FileController extends Controller
      */
     public function show($id)
     {
-        //
+        $file = File::find($id);
+
+        if($file) {
+            return response()->json(['message' => $file], 200);
+        }
+
+        return response()->json(['message' => "Does not exists file with that id"], 404);
     }
 
 
@@ -78,8 +86,7 @@ class FileController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateFileRequest $request, $id)
-    {
+    public function update(UpdateFileRequest $request, $id) {
         $file = File::find($id);
 
         if($file) {
@@ -110,8 +117,20 @@ class FileController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $file = File::find($id);
+
+        if($file)
+        {
+            FileManager::delete(public_path().$file->path);
+
+            $file->delete();
+
+            return response()->json(['data' => "The file with id {$file->id} was removed"],200);
+        }
+
+        return response()->json(['message' => 'Does not exists a file with that id'], 404);
     }
+
 
 
 
